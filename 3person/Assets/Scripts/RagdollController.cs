@@ -54,5 +54,9 @@ public class RagdollController : MonoBehaviour
         {
             col.enabled = false;
         }
+
+        GetComponent<Rigidbody>().detectCollisions = true;
+        GetComponent<Rigidbody>().useGravity = true;
+        GetComponent<CapsuleCollider>().enabled = true;
     }
 }

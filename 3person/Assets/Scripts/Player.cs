@@ -26,8 +26,7 @@ public class Player : DinamicActor
     private void Start()
     {
         currentMoveSpeed = defaultMoveSpeed;
-        //rc.EnableAnimator();
-        //GetComponent<CapsuleCollider>().enabled = true;
+        rc.EnableAnimator();
     }
 
     private void OnEnable()
